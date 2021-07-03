@@ -42,7 +42,7 @@ def load_saved_predictors():
 
     global __model
     if __model is None:
-        with open(predictors[0] + "/ banglore_home_prices_model.pickle", 'rb') as f: 
+        with open(predictors[0] + "/banglore_home_prices_model.pickle", 'rb') as f: 
 
 
             __model = pickle.load(f)
