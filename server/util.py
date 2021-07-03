@@ -36,13 +36,13 @@ def load_saved_predictors():
     predictors = os.path.join(path, "predictors"),
 
 
-    with open(predictors[0] + "./columns.json", "r") as f:
+    with open(predictors[0] + "/columns.json", "r") as f:
         __data_columns = json.load(f)['data_columns']
         __locations = __data_columns[4:]  # first 4 columns are sqft, bath, balcony, bhk
 
     global __model
     if __model is None:
-        with open(predictors[0] + "./bangalore_home_price_model.pickle", 'rb') as f:
+        with open(predictors[0] + "/bangalore_home_price_model.pickle", 'rb') as f:
             __model = pickle.load(f)
     print("loading saved artifacts...done")
 
