@@ -1,16 +1,19 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <title>Banglore Home Price Prediction</title>
+    <title>Bangalore Home Price Prediction</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="app.js"></script>
-	<link rel="stylesheet" href="app.css">
+   <!--  <script src="app.js"></script>
+	<link rel="stylesheet" href="app.css"> --> <!-- For running locally -->
+    <script src="{{ url_for('static',filename='app.js') }}"></script>
+	<link rel="stylesheet"  href= "{{ url_for('static',filename='app.css') }}"> <!-- For integrating Flask and HTML -->
 </head>
 <body>
 <div class="img"></div>
 <form class="form">
 	<h2>Area (Square Feet)</h2>
-    <input class="area"  type="text" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
-	<h2>BHK</h2>
+    <input class="area"  type="email" id="uiSqft" class="floatLabel" name="Squareft" value="1000">
+	<h2>Bedroom</h2>
 	<div class="switch-field">
 		<input type="radio" id="radio-bhk-1" name="uiBHK" value="1"/>
 		<label for="radio-bhk-1">1</label>
@@ -22,6 +25,19 @@
 		<label for="radio-bhk-4">4</label>
 		<input type="radio" id="radio-bhk-5" name="uiBHK" value="5"/>
 		<label for="radio-bhk-5">5</label>
+	</div>
+	<h2>Balcony</h2>
+	<div class="switch-field">
+		<input type="radio" id="radio-bal-1" name="uiBal" value="1"/>
+		<label for="radio-bal-1">1</label>
+		<input type="radio" id="radio-bal-2" name="uiBal" value="2" checked/>
+		<label for="radio-bal-2">2</label>
+		<input type="radio" id="radio-bal-3" name="uiBal" value="3"/>
+		<label for="radio-bal-3">3</label>
+		<input type="radio" id="radio-bal-4" name="uiBal" value="4"/>
+		<label for="radio-bal-4">4</label>
+		<input type="radio" id="radio-bal-5" name="uiBal" value="5"/>
+		<label for="radio-bal-5">5</label>
 	</div>
 	</form>
 <form class="form">

@@ -1,65 +1,65 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
 .switch-field {
-	display: flex;
-	margin-bottom: 36px;
-	overflow: hidden;
+  display: flex;
+  margin-bottom: 36px;
+  overflow: hidden;
 }
 
 .switch-field input {
-	position: absolute !important;
-	clip: rect(0, 0, 0, 0);
-	height: 1px;
-	width: 1px;
-	border: 0;
-	overflow: hidden;
+  position: absolute !important;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  width: 1px;
+  border: 0;
+  overflow: hidden;
 }
 
 .switch-field label {
-	background-color: #e4e4e4;
-	color: rgba(0, 0, 0, 0.6);
-	font-size: 14px;
-	line-height: 1;
-	text-align: center;
-	padding: 8px 16px;
-	margin-right: -1px;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
-	transition: all 0.1s ease-in-out;
+  background-color: #e4e4e4;
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  line-height: 1;
+  text-align: center;
+  padding: 8px 16px;
+  margin-right: -1px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3), 0 1px rgba(255, 255, 255, 0.1);
+  transition: all 0.1s ease-in-out;
 }
 
 .switch-field label:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .switch-field input:checked + label {
-	background-color: #a5dc86;
-	box-shadow: none;
+  background-color: #a5dc86;
+  box-shadow: none;
 }
 
 .switch-field label:first-of-type {
-	border-radius: 4px 0 0 4px;
+  border-radius: 4px 0 0 4px;
 }
 
 .switch-field label:last-of-type {
-	border-radius: 0 4px 4px 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .form {
-	max-width: 270px;
-	font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
-	font-weight: normal;
-	line-height: 1.625;
-	margin: 8px auto;
-	padding-left: 16px;
-	z-index: 2;
+  max-width: 270px;
+  font-family: "Lucida Grande", Tahoma, Verdana, sans-serif;
+  font-weight: normal;
+  line-height: 1.55;
+  margin: 8px auto;
+  padding-left: 16px;
+  z-index: 2;
 }
 
 h2 {
-	font-size: 18px;
-	margin-bottom: 8px;
+  font-size: 18px;
+  margin-bottom: 8px;
 }
-.area{
+.area {
   font-family: "Roboto", sans-serif;
   outline: 0;
   background: #f2f2f2;
@@ -73,7 +73,7 @@ h2 {
   border-radius: 5px;
 }
 
-.location{
+.location {
   font-family: "Roboto", sans-serif;
   outline: 0;
   background: #f2f2f2;
@@ -87,39 +87,39 @@ h2 {
   border-radius: 5px;
 }
 
-.submit{
+.submit {
   background: #a5dc86;
   width: 76%;
   border: 0;
   margin: 25px 0 10px;
   box-sizing: border-box;
   font-size: 15px;
-	height: 35px;
-	text-align: center;
-	border-radius: 5px;
+  height: 35px;
+  text-align: center;
+  border-radius: 5px;
 }
 
-.result{
-		background: #dcd686;
-		width: 76%;
-		border: 0;
-		margin: 25px 0 10px;
-		box-sizing: border-box;
-		font-size: 15px;
-		height: 35px;
-		text-align: center;
+.result {
+  background: #dcd686;
+  width: 76%;
+  border: 0;
+  margin: 25px 0 10px;
+  box-sizing: border-box;
+  font-size: 15px;
+  height: 35px;
+  text-align: center;
 }
 
 .img {
-  background: url('https://images.unsplash.com/photo-1565402170291-8491f14678db?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1408&q=80');
-	background-repeat: no-repeat;
+  background: url("https://i.ibb.co/vhP77Rz/background.jpg");
+  background-repeat: no-repeat;
   background-size: auto;
-  background-size:100% 100%;
+  background-size: 100% 100%;
   -webkit-filter: blur(5px);
   -moz-filter: blur(5px);
   -o-filter: blur(5px);
   -ms-filter: blur(5px);
-  filter: blur(5px);
+  filter: blur(15px);
   position: fixed;
   width: 100%;
   height: 100%;
@@ -128,6 +128,7 @@ h2 {
   z-index: -1;
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
