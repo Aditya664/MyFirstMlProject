@@ -35,15 +35,16 @@ def load_saved_predictors():
     path = os.path.dirname(__file__)
     predictors = os.path.join(path, "predictors"),
 
-with open("./predictors/columns.json", "r") as f:
+
+    with open(predictors[0] + "/columns.json", "r") as f:
         __data_columns = json.load(f)['data_columns']
-        __locations = __data_columns[3:]  # first 3 columns are sqft, bath, bhk
+        __locations = __data_columns[4:]  # first 4 columns are sqft, bath, balcony, bhk
 
-    
-    with open('./predictors/bangalore_home_price_model.pickle', 'rb') as f:
-        __model = pickle.load(f)
+    global __model
+    if __model is None:
+        with open(predictors[0] + "/bangalore_home_price_model.pickle", 'rb') as f:
+            __model = pickle.load(f)
     print("loading saved artifacts...done")
-
 
 def get_location_names():
 
